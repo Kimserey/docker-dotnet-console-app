@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "WebApplication1": {
+    "WebApplication2": {
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
