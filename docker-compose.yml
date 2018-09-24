@@ -1,8 +1,13 @@
-version: '3.4'
+version: '3.6'
 
 services:
+  consoleapp1:
+    image: dockerconsoleapp/consoleapp1
+    build:
+      context: .
+      dockerfile: DockerConsoleApp/Dockerfile
   webapplication1:
-    image: ${DOCKER_REGISTRY}webapplication1
+    image: dockerconsoleapp/webapplication1
     build:
       context: .
       dockerfile: WebApplication1/Dockerfile
