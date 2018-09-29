@@ -1,20 +1,8 @@
 version: '3.6'
 
 services:
-  consoleapp1:
-    image: dockerconsoleapp/consoleapp1
-    build:
-      context: .
-      dockerfile: DockerConsoleApp/Dockerfile
-
   webapplication1:
     image: dockerconsoleapp/webapplication1
     build:
       context: .
       dockerfile: WebApplication1/Dockerfile
-
-  webapplication2:
-    image: dockerconsoleapp/webapplication2
-    build:
-      context: .
-      dockerfile: WebApplication2/Dockerfile
