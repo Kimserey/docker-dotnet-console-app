@@ -1,7 +1,9 @@
-﻿namespace WebApplication1
+﻿using System.Collections.Generic;
+
+namespace WebApplication1
 {
     public interface IPersonRepository
     {
-        string[] GetNames();
+        IEnumerable<string> GetNames();
     }
 }

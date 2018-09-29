@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace WebApplication1
 {
@@ -9,7 +11,7 @@ namespace WebApplication1
         [HttpGet]
         public ActionResult<string[]> Get([FromServices] IPersonRepository repository)
         {
-            return repository.GetNames();
+            return repository.GetNames().ToArray();
         }
     }
 }
