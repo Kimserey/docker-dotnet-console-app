@@ -1,0 +1,1 @@
+..\flyway\flyway  migrate -url=jdbc:sqlite:..\sqlitetest.db -locations=filesystem:./

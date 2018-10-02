@@ -8,28 +8,17 @@ namespace WebApplication1
 {
     public class PersonRepository : IPersonRepository
     {
-        private string _connectionString;
+        private IDbConnection _connection;
 
-        public PersonRepository(string connectionString)
+        public PersonRepository(IDbConnection connection)
         {
-            _connectionString = connectionString;
-        }
-
-        private IDbConnection GetConnection()
-        {
-            return new SQLiteConnection(_connectionString);
+            _connection = connection;
         }
 
         public IEnumerable<string> GetNames()
         {
             IEnumerable<string> names = Enumerable.Empty<string>();
-
-            using (var conn = GetConnection())
-            {
-                names = conn.Query<string>("SELECT name FROM Person");
-            }
-
-            return names;
+            return _connection.Query<string>("SELECT name FROM Person");
         }
     }
 }
