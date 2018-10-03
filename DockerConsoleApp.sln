@@ -10,8 +10,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{C657B83F-F55A-480C-97A1-2302A33C2968}"
 	ProjectSection(SolutionItems) = preProject
 		Migrations\Dockerfile = Migrations\Dockerfile
-		Migrations\readme.md = Migrations\readme.md
-		Migrations\run_migrations.cmd = Migrations\run_migrations.cmd
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{551BF5C3-AA95-4E08-97F2-C690A3B74D14}"

@@ -7,16 +7,16 @@ services:
       dockerfile: WebApplication1/Dockerfile
     depends_on:
       - db
-#      - migration
-#  migration:
-#    build:
-#      context: .
-#      dockerfile: Migrations/Dockerfile
-#    environment:
-#        SA_USER: "sa"
-#        SA_PASSWORD: "MyPassword001"
-#    depends_on:
-#      - db
+      - migration
+  migration:
+    build:
+      context: .
+      dockerfile: Migrations/Dockerfile
+    environment:
+        SA_USER: "sa"
+        SA_PASSWORD: "MyPassword001"
+    depends_on:
+      - db
   db:
     image: "mcr.microsoft.com/mssql/server"
     environment:
