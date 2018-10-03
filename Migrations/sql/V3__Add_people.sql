@@ -1,2 +1,2 @@
-insert into PERSON (ID, NAME) values (4, 'Tom');
-insert into PERSON (ID, NAME) values (5, 'Kim');
+insert into PERSON (ID, NAME) values (6, 'Jim');
+insert into PERSON (ID, NAME) values (7, 'Sam');
